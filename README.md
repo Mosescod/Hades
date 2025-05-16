@@ -1,7 +1,7 @@
-# Hades AI - Topic-Based Conversational Agent
+# Hades AI - Conversational AI Agent
 
-![Hades Logo](https://via.placeholder.com/150x50?text=Hades+AI) 
-*(Consider adding your actual logo here)*
+![Hades Logo](https://github.com/Mosescod/Hades/blob/main/docs/hades%20banner%20first.png) 
+
 
 [![npm version](https://img.shields.io/npm/v/hades-ai.svg)](https://www.npmjs.com/package/hades-ai)
 [![Build Status](https://img.shields.io/travis/yourusername/hades-ai/main.svg)](https://travis-ci.org/yourusername/hades-ai)
