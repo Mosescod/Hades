@@ -1,6 +1,6 @@
-const BaseTopic = require('../core/Topic');
+const { Topic } = require('../core/Topic');
 
-class EventPlanningTopic extends BaseTopic {
+class EventPlanningTopic extends Topic {
   constructor() {
     super({
       name: "event_planning",

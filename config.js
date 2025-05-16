@@ -1,9 +1,6 @@
+const path = require('path');
+
 module.exports = {
-  conversation: {
-    historyLength: 20,
-    responseTimeout: 5000,
-    maxTopicsActive: 3
-  },
   nlp: {
     enableSpellcheck: true,
     enableSentiment: true,
@@ -12,6 +9,15 @@ module.exports = {
   memory: {
     shortTermCapacity: 10,
     longTermPersistence: true,
-    persistenceFile: './memory.json'
+    persistencePath: path.join(__dirname, 'data') // Fixed path resolution
+  },
+  integration: {
+    topicBlending: true,
+    maxRelatedSuggestions: 2,
+    memoryRecallWeight: 0.3
+  },
+  conversation: {
+        maxTopicsActive: 3,
+        minMatchScore: 0.5 // Lower threshold
   }
 };

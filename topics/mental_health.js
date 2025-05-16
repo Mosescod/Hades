@@ -1,6 +1,6 @@
-const BaseTopic = require('../core/Topic');
+const { Topic } = require('../core/Topic');
 
-class MentalHealthTopic extends BaseTopic {
+class MentalHealthTopic extends Topic {
   constructor() {
     super({
       name: "mental_health",

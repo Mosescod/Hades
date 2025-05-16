@@ -3,8 +3,14 @@ const { WordTokenizer, PorterStemmer, SentimentAnalyzer, Spellcheck } = natural;
 const config = require('../config');
 
 class NLProcessor {
-  constructor(settings) {
-    this.config = settings;
+  constructor(settings = {}) {
+    this.tokens = [];
+    this.config = {
+      enableSentiment: false,
+      enableSpellcheck: false,
+      enableStemming: true,
+      ...settings // User settings override defaults
+    };
     this.tokenizer = new WordTokenizer();
     this.stemmer = PorterStemmer;
     
@@ -103,28 +109,31 @@ class NLProcessor {
   }
 
   extractEntities(text) {
-    const entities = {};
-    
-    // Extract known pattern matches
-    Object.keys(this.customPatterns).forEach(type => {
-      const matches = text.match(this.customPatterns[type]);
-      if (matches) {
-        entities[type] = matches;
-      }
-    });
-
-    // Extract potential keywords (nouns)
-    const nouns = this.tokens.filter(token => {
-      // Simple heuristic - words longer than 3 chars that aren't in stopwords
-      return token.length > 3 && !natural.stopwords.includes(token);
-    });
-    
-    if (nouns.length) {
-      entities.keywords = nouns;
+  const entities = {};
+  
+  // Tokenize the text here since we're not using this.tokens
+  const tokens = this.tokenizer.tokenize(text.toLowerCase());
+  
+  // Extract known pattern matches
+  Object.keys(this.customPatterns).forEach(type => {
+    const matches = text.match(this.customPatterns[type]);
+    if (matches) {
+      entities[type] = matches;
     }
+  });
 
-    return entities;
+  // Extract potential keywords (nouns)
+  const nouns = tokens.filter(token => {
+    // Simple heuristic - words longer than 3 chars that aren't in stopwords
+    return token.length > 3 && !natural.stopwords.includes(token);
+  });
+  
+  if (nouns.length) {
+    entities.keywords = nouns;
   }
+
+  return entities;
+}
 
   // Add words to spellcheck dictionary
   addWords(words) {
