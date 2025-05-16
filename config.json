@@ -1,9 +1,0 @@
-{
-  "defaultFallbacks": [
-    "Tell me more about that.",
-    "How does that make you feel?",
-    "What does that mean to you?"
-  ],
-  "unknownTopicResponse": "I'd like to understand more about that.",
-  "maxContextMemory": 5
-}

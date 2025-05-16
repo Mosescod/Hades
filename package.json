@@ -1,20 +1,30 @@
+
+
 {
-  "name": "hades-chatbot",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "node main.js"
+  "name": "hades-ai",
+  "version": "0.2.2",
+  "description": "A conversational AI agent with topic-based responses",
+  "main": "lib/index.js",
+  "bin": {
+    "hades": "./bin/hades"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "scripts": {
+    "start": "node bin/hades",
+    "test": "mocha test/**/*.js"
+  },
+  "keywords": ["AI", "chatbot", "NLP"],
+  "author": "mosescod",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",
     "compromise": "^14.14.4",
     "figlet": "^1.8.1",
     "natural": "^8.0.1",
+    "node": "^20.19.2",
     "readline": "^1.3.0",
     "sentiment": "^5.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
   }
 }
