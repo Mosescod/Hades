@@ -4,8 +4,8 @@
 
 
 [![npm version](https://img.shields.io/npm/v/hades-ai.svg)](https://www.npmjs.com/package/hades-ai)
-[![Build Status](https://img.shields.io/travis/yourusername/hades-ai/main.svg)](https://travis-ci.org/yourusername/hades-ai)
-[![Coverage Status](https://coveralls.io/repos/github/yourusername/hades-ai/badge.svg)](https://coveralls.io/github/yourusername/hades-ai)
+[![CI Status](https://github.com/mosescod/hades/workflows/CI/badge.svg)](https://github.com/mosescod/hades/actions)
+[![Coverage Status](https://coveralls.io/repos/github/mosescod/hades/badge.svg)](https://coveralls.io/github/mosescod/hades)
 
 A sophisticated conversational AI agent that uses dynamic topic matching and context-aware responses. Perfect for building:
 - Intelligent chatbots 💬
