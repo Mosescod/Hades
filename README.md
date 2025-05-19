@@ -3,9 +3,8 @@
 ![Hades Logo](https://github.com/Mosescod/Hades/blob/main/docs/hades%20banner%20first.png) 
 
 
-[![npm version](https://img.shields.io/npm/v/hades-ai.svg)](https://www.npmjs.com/package/hades-ai)
-[![CI Status](https://github.com/mosescod/hades/workflows/CI/badge.svg)](https://github.com/mosescod/hades/actions)
-[![Coverage Status](https://coveralls.io/repos/github/mosescod/hades/badge.svg)](https://coveralls.io/github/mosescod/hades)
+[![Live Demo](https://img.shields.io/badge/Hades-Live_Demo-4CAF50?style=for-the-badge&logo=vercel)](https://www.adamproject.live/hades.html)
+[![API Status](https://img.shields.io/website?down_message=offline&label=API&up_message=online&url=https%3A%2F%2Fyour-vercel-app.vercel.app%2Fapi%2Fchat)](https://www.adamproject.live/hades.html)
 
 A sophisticated conversational AI agent that uses dynamic topic matching and context-aware responses. Perfect for building:
 - Intelligent chatbots 💬
