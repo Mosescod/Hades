@@ -4,7 +4,7 @@
 
 
 [![Live Demo](https://img.shields.io/badge/Hades-Live_Demo-4CAF50?style=for-the-badge&logo=vercel)](https://www.adamproject.live/hades.html)
-[![API Status](https://img.shields.io/website?down_message=offline&label=API&up_message=online&url=https%3A%2F%2Fyour-vercel-app.vercel.app%2Fapi%2Fchat)](https://adam-project-mosescods-projects.vercel.app)
+[![API Status](https://img.shields.io/website?down_message=offline&label=API&up_message=online&url=https%3A%2F%2Fyour-vercel-app.vercel.app%2Fapi%2Fchat)](https://www.adamproject.live/hades.html)
 
 A sophisticated conversational AI agent that uses dynamic topic matching and context-aware responses. Perfect for building:
 - Intelligent chatbots 💬
